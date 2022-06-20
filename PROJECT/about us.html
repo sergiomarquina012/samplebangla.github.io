@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Style.css" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+      }
+
+      .about {
+        background-size: 100%;
+        background-color: #fdfdfd;
+        overflow: hidden;
+        padding: 50px 0;
+        height: 100vh;
+        background: url("https://onlinetyping.in/images/bengali.jpg") no-repeat;
+        /* filter: blur(7px); */
+        /* background: no-repeat; */
+      }
+
+      .inner-section {
+        width: 55%;
+        float: right;
+        background-color: #d39393;
+        padding: 50px;
+        box-shadow: 12px 12px 8px rgb(0, 0, 0, 0.3);
+      }
+
+      .inner-section h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 900;
+      }
+
+      .text {
+        font-size: 16px;
+        color: #545454;
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom: 40px;
+      }
+
+      .bg-img {
+        background: url("https://onlinetyping.in/images/bengali.jpg") no-repeat;
+        -webkit-background-size: cover;
+        background-size: 100%;
+        background-position: center center;
+        /* background-repeat: no-repeat; */
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        filter: blur(7px);
+        -webkit-filter: blur(7px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bg-img"></div>
+    <div class="about">
+      <div class="inner-section">
+        <h1>About us</h1>
+        <p class="text">
+          With about 250 million native and about 300 million total speakers
+          worldwide, Bangla is the seventh most spoken language in the world by
+          total number of native speakers and the eleventh most spoken language
+          by total number of speakers. Banglacrawl is a website containing
+          various types of materials on Lifestyle, Education, Entertainment,and
+          many more Bengali resources.It is flourished with its high quality
+          content. Banglacrawl is build up for those who are flexible to gather
+          knowledge about Bangla. It supports and encourages teachers and
+          students to share their understandings and queries,moreover it allows
+          all community to connect and gather learnings,stories,and ideas from
+          across the movement. We are here to reach the visitors with our best
+          quality.
+        </p>
+        <div class="skills"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us page</title>
+
+    <style> 
+    *
+    { 
+        
+    margin : 0;
+    padding : 0;
+    box-sizing: border box;
+    font-family: 'Poppins',sans-serif;
+    }
+
+    .Contact
+{
+    position: relative;
+    min-height:  100vh ;
+    padding: 50px 100px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    background: url(Last.jpg);
+    background-size: cover;
+}
+    .Contact .content
+{
+max-width: 800px;
+text-align: center;
+}
+.Contact .content h2
+{
+font-size: 36px;
+font-weight: 500;
+color: #fff;
+
+}
+
+.Contact .content p
+{
+font-weight: 300;
+color: #fff;
+}
+.container
+{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+.container .ContactInfo
+{
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+.container .ContactInfo .box
+{
+position: relative;
+padding: 20px 0;
+display: flex;
+}
+.container .ContactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .ContactInfo .box .text
+{
+display: flex;
+margin-left: 20px;
+font-size: 16px;
+color: #fff;
+flex-direction: column;
+font-weight: 300;
+}
+.container .ContactInfo .box .text h3
+{
+font-weight: 500;
+color:#fff ;
+}
+.ContactFrom
+{
+width: 40%;
+padding: 40px;
+background: #fff;
+}
+.ContactFrom h2
+{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.ContactFrom .inputbox
+{
+position: relative;
+width: 100%;
+margin-top: 10px;
+}
+.ContactFrom .inputbox input,
+.ContactFrom .inputbox textarea
+{
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid #333;
+outline: none;
+resize: none;
+}
+.ContactFrom .inputbox span
+{
+position:absolute ;
+left: 0;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+pointer-events: none;
+transition: .5s;
+color: #666;
+}
+.ContactFrom .inputbox input:focus ~ span
+.ContactFrom .inputbox input:valid ~ span
+.ContactFrom .inputbox textarea:focus ~ span
+.ContactFrom .inputbox textarea:valid ~ span
+{
+    color: #00b90c;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+.ContactFrom .inputbox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+@media (max-width:991px)
+{
+    .Contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction:column ;
+    }
+    .container .ContactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .ContactInfo
+    {
+        width: 100%;
+    }
+}
+
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <section class="Contact">
+        <div class="content">
+            <h2> Contact Us </h2>
+            <p>If you have questions, comments or suggestions about this website in general, or would like to report on a website listed here, please send us an email using the following form. We will get back to you as soon as possible.</p>
+
+        </div class="container">
+           <div class="ContactInfo">
+               <div class="box">
+                   <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                       <div class="text">
+                           <h3>Address</h3>
+                           <p>Nit Silchar,Cachar ,Assam.<br>
+                            Pin code -788010.</p>
+                       </div>
+
+                   </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                        <div class="text">
+                            <h3>Phone No-</h3>
+                            <p>+917896914537<br>
+                                +918402078003<br>
+                                
+                            </p>
+                        </div>
+ 
+                    </div> 
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>Banglacrawl_01@gmail.com<br>
+                                </p>
+                            </div>
+     
+                        </div>     
+
+               </div>
+
+           </div>
+        <div>
+         <div class="ContactFrom">
+             <form>
+                 <h2>Send message</h2>
+                <div class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name</span>
+                </div> 
+                <div class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputbox">
+                    <textarea required="required"></textarea>
+                    <span>Type your message....</span>
+                </div>
+                <div class="inputbox">
+                    <input type="submit" name="" value="Send">
+                    
+                </div>  
+
+             </form>
+
+         </div>   
+
+        </div>
+
+
+    </section>
+</body>
+</html>

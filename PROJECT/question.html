@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Question and Answer Blog</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+
+      background-color: rgb(117, 103, 121);
+      position: relative;
+
+      float: left;
+  
+  padding: 0 5px;
+
+     width: 15%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  color: white;
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: #8BF4F9;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+
+.img-area{
+  background-image: url(https://image.shutterstock.com/image-photo/side-border-colorful-question-marks-260nw-1452074978.jpg);
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter:blur(7px);
+}
+
+
+</style>
+<body>
+
+  <div class="img-area">
+    
+  </div>
+
+<div class="main">
+
+
+
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src=" https://play-lh.googleusercontent.com/ifM-gacLh1_DznywdHeDovY9dlJBPYmzO34DFCtqm4Cajp1JFRZGsIE2Ad41TZXW6Q=w240-h480-rw" width="400" 
+     height="200">
+</div>
+<div class="title">
+ <h1>
+Bissoy</h1>
+</div>
+<div class="des">
+
+<button><a href="https://www.bissoy.com/" target="_blank"> Read More... </a></button>
+</div>
+</div>
+</div>
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src=" https://www.kindpng.com/picc/m/34-348913_bangladesh-flag-round-icon-hd-png-download.png" width="400" 
+     height="200">
+</div>
+<div class="title">
+ <h1>
+Bloggar Bangladesh</h1>
+</div>
+<div class="des">
+
+<button><a href="https://www.bloggerbangladesh.com/" target="_blank"> Read More... </a></button>
+</div>
+</div>
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="https://banglavibe.com/wp-content/uploads/2017/08/Bangla-Vibe-Logo-2.png" width="400" 
+     height="200">
+</div>
+<div class="title">
+ <h1>
+Bangla vibe</h1>
+</div>
+<div class="des">
+ 
+<button><a href="https://banglavibe.com/" target="_blank"> Read More... </a></button>
+</div>
+</div>
+
+
+<div class="card">
+
+<div class="image">
+   <img src="data:image/png;base64,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"_blank" width="400" 
+     height="200">
+</div>
+<div class="title">
+ <h1>
+Bangla Hub</h1>
+</div>
+<div class="des">
+ 
+<button><a href="https://banglahub.com.bd/" target="_blank"> Read More... </a></button>
+</div>
+</div>
+
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="https://play-lh.googleusercontent.com/UGVhdeduJJf7rJOGEep2PBUbZg_lux_JtKAiZCUQZMvXK3vigMYfh6WG9WQWV_txIUhy"_blank" width="400" 
+     height="200">
+</div>
+<div class="title">
+ <h1>
+Shopnik</h1>
+</div>
+<div class="des">
+ 
+<button><a href="https://shopnik.com.bd/" target="_blank"> Read More... </a></button>
+</div>
+</div>
+
+</div>
+</body>
+</html>
